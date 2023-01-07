@@ -1,0 +1,17 @@
+[package]
+name = "kemet"
+version = "0.1.0"
+edition = "2018"
+authors = ["Vinícius V. Viterbo"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+# The profile used for 'cargo build'
+[profile.dev]
+panic = "abort" # Disables stack unwinding on panic
+
+# The profile used for cargo build --release
+[profile.release]
+panic = "abort" # Disables stack unwinding on panic
